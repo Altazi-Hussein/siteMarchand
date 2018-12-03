@@ -1,0 +1,64 @@
+body
+{
+	background-color: #636e72;
+	max-width: 80rem;
+	margin: auto;
+}
+
+header
+{
+	margin-bottom: 2rem;
+}
+
+ul
+{
+	padding: 15px;
+	text-align:center;
+	/*background-color:#b2bec3;*/
+}
+
+ul li:hover
+{
+	transition-duration: 400ms;
+	cursor: pointer;
+	background-color:#2d3436;
+}
+ul li
+{
+	list-style:none;
+	display:inline;
+	margin: 15px;
+	padding: 1em;
+	background-color:#636e72;
+	border: 5px solid white;
+	font-family: 'Oswald', sans-serif;
+}
+
+ul a
+{
+	text-decoration:none;
+	color: white;
+}
+
+.general
+{
+	background-color:#dfe6e9;
+	overflow:auto;
+	height:60rem;
+	width: 80rem;
+}
+
+
+.div1
+{
+	background-color: black;
+	width: 20rem;
+	height: 40rem;
+}
+
+.section2
+{
+	
+	
+}
+	
