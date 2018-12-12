@@ -1,34 +1,38 @@
 a
 {
 	text-decoration:none;
-	font-family: 'Oswald', sans-serif;
+	font-family: Roboto, sans-serif;
 }
 
-body
+html,body
 {
 	background-color: #636e72;
+	height: 100%;
 	display:flex;
 	justify-content:center;
-	align-items:center;
+	align-items : center;
+	background-image:url(https://images.roomstogo.com/images/product/lr_rm_pennington_blue~Pennington-Blue-7-Pc-Living-Room.jpeg?imwidth=1145);	
+	background-repeat:no-repeat;
 }
 
 section
 {
 	background-color:#dfe6e9;
-	/*overflow:auto;*/
+	margin : 0;
 	height:45rem;
 	width: 80rem;
 	padding:1.5%;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
+	box-shadow: 0px 5px 10px black;
 }
 section a h1
 {
 	text-decoration: none;
 	color:#636e72;
 	padding: 0.5em;
-	border: 0.2em solid #636e72;
+	border: 0.1em solid #636e72;
 }
 
 section a h1:hover
@@ -64,9 +68,7 @@ section a h1:hover
 }
 [class^=section]:hover
 {
-	transition-property: opacity, border;
-	transition-duration:300ms;
-	border: double solid black;
+	transition-duration:400ms;
 	opacity:1;
 }
 
