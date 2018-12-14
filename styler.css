@@ -11,8 +11,9 @@ html,body
 	display:flex;
 	justify-content:center;
 	align-items : center;
-	background-image:url(https://images.roomstogo.com/images/product/lr_rm_pennington_blue~Pennington-Blue-7-Pc-Living-Room.jpeg?imwidth=1145);	
+	background-image: url("background.jpeg");
 	background-repeat:no-repeat;
+	background-position: center;
 }
 
 section
@@ -40,7 +41,7 @@ section a h1:hover
 	background-color:#636e72;
 	color: white;
 	border: 0.1em solid white;
-	transition-duration: 500ms;
+	transition-duration: 300ms;
 }
 [class^=section]{
 	opacity: 0.7;
@@ -52,7 +53,7 @@ section a h1:hover
 	align-items:center;
 	cursor:pointer;
 	}
-
+	
 .section1
 {
 	background-image:url('https://ksassets.timeincuk.net/wp/uploads/sites/56/2018/06/armchair-with-lamp.jpg');
@@ -66,9 +67,9 @@ section a h1:hover
 {
 	background-image:url('https://i.pinimg.com/originals/2e/8a/5c/2e8a5ca41d43da19f52ac999623ec242.jpg');
 }
-[class^=section]:hover
+[class^=section]:hover h1
 {
-	transition-duration:400ms;
+	transition-duration:300ms;
 	opacity:1;
 }
 
