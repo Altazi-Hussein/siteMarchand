@@ -1,85 +1,100 @@
 a
 {
-	text-decoration:none;
-	font-family: Roboto, sans-serif;
+	text-decoration: none;
 }
-
-html,body
+html
 {
-	background-color: #636e72;
-	height: 100%;
+	background-image: url("file://///teraetu/homeetu/p1806978/My%20Documents/HTML%20PROJET/background.jpeg");
+	background-position:top;
+	background-repeat: no-repeat;
 	display:flex;
 	justify-content:center;
-	align-items : center;
-	background-image: url("background.jpeg");
-	background-repeat:no-repeat;
-	background-position: center;
+	align-items:center;
+	height: 100vh;
 }
-
 section
 {
-	background-color:#dfe6e9;
-	margin : 0;
-	height:45rem;
-	width: 80rem;
-	padding:1.5%;
+	width: 70vw;
+	height: 70vh;
+	background-color: #ecf0f1	;
 	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	box-shadow: 0px 5px 10px black;
-}
-section a h1
-{
-	text-decoration: none;
-	color:#636e72;
-	padding: 0.5em;
-	border: 0.1em solid #636e72;
+	justify-content:space-around;
+	padding: 1vh;
 }
 
-section a h1:hover
+[class^=section] h1
 {
-	background-color:#636e72;
-	color: white;
-	border: 0.1em solid white;
-	transition-duration: 300ms;
+	
 }
-[class^=section]{
-	opacity: 0.7;
-	width: 32%;
-	height: 100%;
-	background-position:center;
+
+[class^=section]
+{
+	font-family: Roboto, sans serif;
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	cursor:pointer;
-	}
-	
+	width: 32vw;
+	color: black;
+	margin: 1vh;
+	opacity: 0.7;
+	transition-duration: 300ms;
+}
+
+[class^=section]:hover
+{
+	transition-duration: 300ms;
+	opacity: 1;
+	width: 35vw;
+}
+
+h1
+{
+	border: 1px solid black;
+	padding: 1vh;
+	transition-duration:300ms;
+}
+
+[class^=section]:hover h1
+{
+	transition-duration: 400ms;
+	background-color:#353b48;
+	border: 1px solid white;
+	color: white;
+}
+
 .section1
 {
-	background-image:url('https://ksassets.timeincuk.net/wp/uploads/sites/56/2018/06/armchair-with-lamp.jpg');
+	background: url(https://ksassets.timeincuk.net/wp/uploads/sites/56/2018/06/armchair-with-lamp.jpg);
+	background-position:center;
 }
 .section2
 {
-	background-image:url('https://i.pinimg.com/originals/9f/aa/27/9faa27bb4112d480a050cc785d5583c2.jpg');
+	background: url(https://i.pinimg.com/originals/9f/aa/27/9faa27bb4112d480a050cc785d5583c2.jpg);
+	background-position:bottom;
 }
-
 .section3
 {
-	background-image:url('https://i.pinimg.com/originals/2e/8a/5c/2e8a5ca41d43da19f52ac999623ec242.jpg');
-}
-[class^=section]:hover h1
-{
-	transition-duration:300ms;
-	opacity:1;
+	background: url(https://i.pinimg.com/originals/2e/8a/5c/2e8a5ca41d43da19f52ac999623ec242.jpg);
+	background-position:center;
 }
 
 @media screen and (max-width: 760px){
 	section{
-		flex-direction:column;
-		overflow: hidden;
+		flex-direction: column;
+		padding:0;
+		margin:0;	
+		width: 100vw;
+		height: 100vh;
 	}
 	[class^=section]{
-		width:100%;
-		height:33%;
+		margin:0;
+		padding:0;
+		height:33vh;
+		width: 100vw;
+	}
+	[class^=section]:hover
+	{
+		width:100vw;
+		height:40vh;
 	}
 }
