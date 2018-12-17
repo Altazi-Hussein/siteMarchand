@@ -1,0 +1,110 @@
+a
+{
+	text-decoration: none;
+}
+html
+{
+	background-image: url("file://///teraetu/homeetu/p1806978/My%20Documents/HTML%20PROJET/background.jpeg");
+	background-position:top;
+	background-repeat: no-repeat;
+	font-family: Roboto, sans serif;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 100vh;
+}
+section
+{
+	width: 70vw;
+	height: 70vh;
+	padding: 1vw;
+	background-color: #ecf0f1;
+	display:flex;
+	justify-content:space-between;
+}
+
+[class^=section] /*Texte dans les div*/
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color: black;
+	opacity: 0.7;
+	transition-duration: 400ms;
+}
+
+[class^=section]:hover
+{
+	transition-duration:400ms;
+	opacity: 1;
+	width: 35vw;
+}
+
+h1
+{
+	border: 1px solid black;
+	padding: 1vh;
+	transition-duration:300ms;
+	text-align:center;
+}
+
+[class^=section]:hover h1
+{
+	transition-duration: 300ms;
+	background-color:#353b48;
+	border: 1px solid white;
+	color: white;
+	content:'Voir le produit';
+}
+
+input
+{
+	height: 3vh;
+	width: 100%;
+	border:none;
+	opacity: 0.8;
+}
+.section1
+{
+	background: url(section1bg.png);
+	background-size:cover;
+	width:35vw;
+}
+.section2
+{
+	background: url(https://kidsfurniturefarm.com/Qd/K5/charmant-chaises-salle-a-manger-ikea-sur-ikea-chaise-salle-manger-lovely-tables-et-chaises-salle-manger.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	width: 35vw;
+	height: 35vh;
+}
+.section3
+{
+	background: url(https://www.cdeco.fr/wp-content/uploads/2018/02/canap%C3%A9DelaktigIKEA.jpg);
+	background-size:cover;
+	background-position:center;
+	width: 35vw;
+	height: 35vh;
+}
+
+@media screen and (max-width: 760px){
+	section{
+		flex-direction: column;
+		padding:0;
+		margin:0;	
+		width: 100vw;
+		height: 100vh;
+	}
+	[class^=section]{
+		margin:0;
+		padding:0;
+		height:33vh;
+		width: 100vw;
+	}
+	[class^=section]:hover
+	{
+		width:100vw;
+		height:40vh;
+	}
+}
