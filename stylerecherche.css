@@ -37,9 +37,8 @@ section
 {
 	transition-duration:400ms;
 	opacity: 1;
-	width: 35vw;
+	font-size: 2vh;
 }
-
 h1
 {
 	border: 1px solid black;
