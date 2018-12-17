@@ -8,7 +8,6 @@
 }
 
 body {  
-  /* This section calls the slideInFromLeft animation we defined above */
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
@@ -76,6 +75,14 @@ input
 	width: 100%;
 	border:none;
 	opacity: 0.8;
+	transition-duration: 300ms;
+	font-size: 1em;
+}
+
+input:hover
+{
+	transition-duration: 300ms;
+	height: 4vh;
 }
 .section1
 {
