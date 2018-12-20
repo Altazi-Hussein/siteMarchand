@@ -17,7 +17,7 @@ a
 }
 html
 {
-	background-image: url("file://///teraetu/homeetu/p1806978/My%20Documents/HTML%20PROJET/background.jpeg");
+	background-image: url("media/background.jpeg");
 	background-position:top;
 	background-repeat: no-repeat;
 	display:flex;
@@ -95,19 +95,21 @@ h1
 	section{
 		flex-direction: column;
 		padding:0;
-		margin:0;	
+		margin:0;
 		width: 100vw;
 		height: 100vh;
+		overflow: hidden;
 	}
 	[class^=section]{
 		margin:0;
 		padding:0;
 		height:33vh;
 		width: 100vw;
+		overflow: hidden;
 	}
 	[class^=section]:hover
 	{
 		width:100vw;
-		height:40vh;
+		overflow: hidden;
 	}
 }

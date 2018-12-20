@@ -17,7 +17,7 @@ a
 }
 html
 {
-	background-image: url("file://///teraetu/homeetu/p1806978/My%20Documents/HTML%20PROJET/background.jpeg");
+	background-image: url("media/background.jpeg");
 	background-position:top;
 	background-repeat: no-repeat;
 	font-family: Roboto, sans serif;
@@ -119,7 +119,7 @@ input:hover
 	[class^=section]{
 		margin:0;
 		padding:0;
-		height:33vh;
+		height:30vh;
 		width: 100vw;
 	}
 	[class^=section]:hover
