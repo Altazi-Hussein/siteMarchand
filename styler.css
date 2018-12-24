@@ -14,6 +14,7 @@ body {
 a
 {
 	text-decoration: none;
+	font-size: 2vh;
 }
 html
 {
@@ -33,11 +34,6 @@ section
 	display:flex;
 	justify-content:space-around;
 	padding: 1vh;
-}
-
-[class^=section] h1
-{
-	
 }
 
 [class^=section]
@@ -91,6 +87,54 @@ h1
 	background-position:center;
 }
 
+
+/*.bienvenue
+{
+	position: absolute;
+	width: 70vw;
+	height: 70vh;
+	background:url(file://///teraetu/homeetu/p1806978/My%20Documents/HTML%20PROJET/background.jpeg);
+	background-position:center;
+	z-index:1;
+	margin: auto;
+	left: 0;
+	top:0;
+	bottom:0;
+	right:0;
+	color: white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size: 5vw;
+	border: 1px solid black;
+}
+
+.bienvenue:focus
+{
+	width:0;
+	height:0;
+}*/
+
+.bienvenue
+{
+	position:absolute;
+	z-index:1;
+	background:blue;
+	width:70vw;
+	height:70vh;
+}
+
+.bienvenue a
+{
+	color:white;
+}
+
+.bienvenue:hover .bienvenue
+{
+	height:5px;
+	width:5px;
+}
+
 @media screen and (max-width: 760px){
 	section{
 		flex-direction: column;
@@ -112,4 +156,8 @@ h1
 		width:100vw;
 		overflow: hidden;
 	}
+	.bienvenue
+	{
+		width: 100vw;
+		height: 100vh;
 }
