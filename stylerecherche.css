@@ -1,52 +1,41 @@
-@keyframes slideInFromLeft {
+@keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  } 
 }
 
 body {  
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-  height: 100vh;
+ animation: 1s ease-out 0s 1 slideInFromTop;
 }
-
 a
 {
 	text-decoration: none;
+	color:black;
 }
 html
 {
 	background-image: url("media/background.jpeg");
-<<<<<<< HEAD
 	background-size:100%;
-=======
 	background-position:top;
-	background-repeat: no-repeat;
->>>>>>> 12732fa9f1bc18e13d50e6b876a0f8d938c264a3
 	font-family: Roboto, sans serif;
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	height: 100vh;
 }
 section
 {
-	width: 70vw;
-	padding: 1vw;
+	width:70vw;
 	background-color: #ecf0f1;
 	display:flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	justify-content:space-around;
 }
 
-[class^=section] /*Texte dans les div*/
+[class^=section] /*Centrage du texte dans les div*/
 {
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	color: black;
 	opacity: 0.7;
 	transition-duration: 400ms;
 }
@@ -55,7 +44,6 @@ section
 {
 	transition-duration:400ms;
 	opacity: 1;
-	font-size: 2vh;
 }
 h1
 {
@@ -63,16 +51,67 @@ h1
 	border: 1px solid black;
 	padding: 1vh;
 	transition-duration:300ms;
-	text-align:center;
 }
 
-[class^=section]:hover h1
+[class^=section]:hover h1,.home:hover h1
 {
 	transition-duration: 300ms;
 	background-color:#353b48;
-	border: 1px solid white;
 	color: white;
-	content:'Voir le produit';
+}
+
+.home 
+{
+	background-image:url(media/homebg.jpg);
+	background-position:center;
+	width:100vw;
+	text-align: center;
+}
+.section1
+{
+	background: url(media/section1bg.png);
+	background-size:cover;
+	width:35vw;
+}
+
+.section2
+{
+	background: url(https://kidsfurniturefarm.com/Qd/K5/charmant-chaises-salle-a-manger-ikea-sur-ikea-chaise-salle-manger-lovely-tables-et-chaises-salle-manger.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 35vh;
+}
+.section3
+{
+	background: url(https://www.cdeco.fr/wp-content/uploads/2018/02/canap%C3%A9DelaktigIKEA.jpg);
+	background-size:cover;
+	background-position:center;
+	width: 35vw;
+	height: 35vh;
+}
+.section4
+{
+	background: url(media/lit.jpg);
+	background-size:cover;
+	background-position:center;
+	width: 35vw;
+	height: 35vh;
+}
+.section5
+{
+	background: url(media/meublejardin.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	height: 35vh;
+}
+.section6
+{
+	background: url(media/cuisine.jpg);
+	background-size:cover;
+	background-position:center;
+	width:35vw;
 }
 
 input
@@ -92,61 +131,12 @@ input:hover
 	transition-duration: 300ms;
 	opacity:1;
 }
-.section1
-{
-	background: url(media/section1bg.png);
-	background-size:cover;
-	width:35vw;
-}
 
-.section6
-{
-	background: url(media/cuisine.jpg);
-	background-size:cover;
-	background-position:center;
-	width:35vw;
-}
-.section2
-{
-	background: url(https://kidsfurniturefarm.com/Qd/K5/charmant-chaises-salle-a-manger-ikea-sur-ikea-chaise-salle-manger-lovely-tables-et-chaises-salle-manger.jpg);
-	background-size:100%;
-	background-repeat:no-repeat;
-	background-position:center;
-	width: 35vw;
-	height: 35vh;
-}.section5
-{
-	background: url(media/meublejardin.jpg);
-	background-size:100%;
-	background-repeat:no-repeat;
-	background-position:center;
-	width: 35vw;
-	height: 35vh;
-}
-.section3
-{
-	background: url(https://www.cdeco.fr/wp-content/uploads/2018/02/canap%C3%A9DelaktigIKEA.jpg);
-	background-size:cover;
-	background-position:center;
-	width: 35vw;
-	height: 35vh;
-}
-.section4
-{
-	background: url(media/lit.jpg);
-	background-size:cover;
-	background-position:center;
-	width: 35vw;
-	height: 35vh;
-}
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 800px){
 	section{
-		padding:0;
-		margin:0;
 		width: 100vw;
-		height: 100vh;
-	}
+			}
 	[class^=section]{
 		margin:0;
 		padding:0;
@@ -155,7 +145,5 @@ input:hover
 	}
 	[class^=section]:hover
 	{
-		width:100vw;
-		height:40vh;
 	}
 }

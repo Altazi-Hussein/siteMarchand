@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="validation.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+	<section>
+		<h1> Récapitulatif de votre commande</h1>
+
+		<div class="produit">
+			<img src="media/section1bg.png">
+			<h2>LISTERBY</h2>
+			Prix unitaire: 59.99€
+			<label>
+				Quantité (15 max.):
+				<input type="number" name="quantity" min="1" max="15">
+			</label>
+		</div>
+
+		<div class="coord">
+		<h2>Vos coordonnées</h2>
+			<table>
+  				<tr>
+  					<td><label for="nom">Nom:</label></td>
+      				<td><input id="nom"></td>
+      			</tr>
+  				<tr>
+  					<td><label for="prenom">Prénom:</label></td>
+      				<td><input id="prenom"></td>
+      			</tr>
+      			<tr>
+  					<td><label for="adresse">Adresse:</label></td>
+      				<td><input id="adresse"></td>
+      			</tr>
+      			<tr>
+  					<td><label for="adresse">Région:</label></td>
+      				<td>
+      					<select>
+      						<option>Auvergne-Rhône-Alpes</option>
+      						<option>Bourgogne-Franche-Comté</option>
+      						<option>Bretagne</option>
+      						<option>Normandie</option>
+      						<option>Nouvelle-Aquitaine</option>
+      						<option>Pays de la Loire</option>
+      					</select>
+      				</td>
+      			</tr>
+      			      			<tr>
+  					<td><label for="telephone">Téléphone:</label></td>
+      				<td><input id="telephone" placeholder="Ex.: 0654321078"></td>
+      			</tr>
+			</table>
+		</div>
+
+	</section>
+</body>
+
+</html>

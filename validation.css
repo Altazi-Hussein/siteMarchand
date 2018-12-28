@@ -1,0 +1,53 @@
+html
+{
+	background-image: url("media/background.jpeg");
+	background-size:100%;
+	background-position:top;
+	font-family: Roboto, sans serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section
+{
+	width: 60vw;
+	max-height: 60vh;
+	background-color: white;
+}
+
+h1
+{
+	text-align: center;
+	padding:1vh;
+}
+
+.produit
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1vw;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	transition-duration: 300ms;
+}
+
+.produit:hover
+{
+	transition-duration:300ms;
+	background: #353b48;
+	color: white;
+
+}
+
+img
+{
+	width:10vh;
+	height:10vh;
+}
+
+.coord
+{
+	padding:1vw;
+}
