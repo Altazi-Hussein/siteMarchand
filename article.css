@@ -1,0 +1,96 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+body
+{
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+	font-family: Roboto, sans-serif;
+}
+
+html
+{
+	background-image: url("media/background.jpeg");
+	background-position:top;
+	background-repeat: no-repeat;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height: 100vh;
+}
+
+section
+{
+	max-width: 60vw;
+	width: 60vw;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 5vh;
+}
+
+section section
+{
+	flex-wrap: wrap;
+}
+
+img
+{
+	width: 25vw;
+	height: 25vw;
+}
+
+a:first-child
+{
+	display: block;
+	height: 5vh;
+	background-color: grey;
+	text-decoration: none;
+	color:black;
+	font-size: 1vw;
+	text-align: center;
+	line-height: 5vh;
+}
+
+.texte
+{
+	align-self: flex-start;
+	border-bottom:1px double black;
+	padding-bottom: 3vh;
+}
+
+.texte > h1
+{
+	text-decoration: underline;
+}
+
+button
+{
+	width: 10vw;
+	height: 5vh;
+	background-color: #5fba7d;
+	border: none;
+	border-radius: 5px;
+	float:right;
+	margin-right: 5vh;
+	border-bottom: 2px solid black;
+}
+
+button:active
+{
+	padding-bottom:-2px;
+	border: none;
+}
+
+textarea
+{
+	height: 10vh;
+	width:17vw;
+	margin: 1vw 0 1vw 0;
+}

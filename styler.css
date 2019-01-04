@@ -29,11 +29,6 @@ a
 	font-size: 2vh;
 }
 
-/*.bienvenue
-{
-	text-align:center;
-	display: block;
-}*/
 section
 {
 	width: 70vw;
@@ -81,17 +76,17 @@ h1
 
 .section1
 {
-	background: url(https://ksassets.timeincuk.net/wp/uploads/sites/56/2018/06/armchair-with-lamp.jpg);
+	background: url(media/indexaccueil.jpg);
 	background-position:center;
 }
 .section2
 {
-	background: url(https://i.pinimg.com/originals/9f/aa/27/9faa27bb4112d480a050cc785d5583c2.jpg);
+	background: url(media/indexarticle.jpg);
 	background-position:bottom;
 }
 .section3
 {
-	background: url(https://i.pinimg.com/originals/2e/8a/5c/2e8a5ca41d43da19f52ac999623ec242.jpg);
+	background: url(media/indexpanier.jpg);
 	background-position:center;
 }
 @media screen and (max-width:800px){
