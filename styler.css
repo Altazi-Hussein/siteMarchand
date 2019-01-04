@@ -7,15 +7,6 @@
   }
 }
 
-body {  
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-}
-
-a
-{
-	text-decoration: none;
-	font-size: 2vh;
-}
 html
 {
 	background-image: url("media/background.jpeg");
@@ -26,6 +17,23 @@ html
 	align-items:center;
 	height: 100vh;
 }
+
+body 
+{  
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+a
+{
+	text-decoration: none;
+	font-size: 2vh;
+}
+
+/*.bienvenue
+{
+	text-align:center;
+	display: block;
+}*/
 section
 {
 	width: 70vw;
@@ -86,56 +94,7 @@ h1
 	background: url(https://i.pinimg.com/originals/2e/8a/5c/2e8a5ca41d43da19f52ac999623ec242.jpg);
 	background-position:center;
 }
-
-
-/*.bienvenue
-{
-	position: absolute;
-	width: 70vw;
-	height: 70vh;
-	background:url(file://///teraetu/homeetu/p1806978/My%20Documents/HTML%20PROJET/background.jpeg);
-	background-position:center;
-	z-index:1;
-	margin: auto;
-	left: 0;
-	top:0;
-	bottom:0;
-	right:0;
-	color: white;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	font-size: 5vw;
-	border: 1px solid black;
-}
-
-.bienvenue:focus
-{
-	width:0;
-	height:0;
-}*/
-
-.bienvenue
-{
-	position:absolute;
-	z-index:1;
-	background:blue;
-	width:70vw;
-	height:70vh;
-}
-
-.bienvenue a
-{
-	color:white;
-}
-
-.bienvenue:hover .bienvenue
-{
-	height:5px;
-	width:5px;
-}
-
-@media screen and (max-width: 760px){
+@media screen and (max-width:800px){
 	section{
 		flex-direction: column;
 		padding:0;
@@ -156,8 +115,4 @@ h1
 		width:100vw;
 		overflow: hidden;
 	}
-	.bienvenue
-	{
-		width: 100vw;
-		height: 100vh;
 }

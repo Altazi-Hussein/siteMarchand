@@ -9,10 +9,34 @@ html
 	justify-content: center;
 	align-items: center;
 }
+
+.home
+{
+	text-decoration: none;
+	color:black;
+	font-size: 2vh;
+	display: block;
+	height: 1vh;
+	text-align: center;
+	background-color: #dbdbdb;
+	line-height: 1vh;
+	padding:1vw;
+}
+
+.home:hover
+{
+	transition-duration: 300ms;
+	background-color: #bcbcbc;
+}
+
+.home:active
+{
+	background-color: #9e9e9e;
+}
+
 section
 {
 	width: 60vw;
-	max-height: 60vh;
 	background-color: white;
 }
 
@@ -21,6 +45,7 @@ h1
 	text-align: center;
 	padding:1vh;
 }
+
 
 .produit
 {
@@ -33,7 +58,7 @@ h1
 	transition-duration: 300ms;
 }
 
-.produit:hover
+.produit:hover, .coord:hover
 {
 	transition-duration:300ms;
 	background: #353b48;
@@ -47,7 +72,103 @@ img
 	height:10vh;
 }
 
-.coord
+.titles
 {
 	padding:1vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulaire
+{
+	display:flex;
+	justify-content: space-between;
+	padding:0 2vh 0 2vh;
+}
+
+.button
+{
+	text-align: center;
+}
+
+button
+{
+	height:7vh;
+	width: 13vw;
+	background-color: #5fba7d;
+	border: none;
+	cursor: pointer;
+	margin: 1vw;
+	font-size: 1vw;
+}
+
+button:hover
+{
+	transition-duration: 300ms;
+	background-color: #6bff9b;
+}
+
+button:active
+{
+	background-color: #2d8248;
+}
+
+
+
+@media screen and (max-width: 1250px)
+{
+	html,body
+	{
+	display: flex;
+	align-items: center;
+	}
+	section
+	{
+		width: 100vw;
+	}
+	button
+	{
+		font-size: 1.5vw;
+		width: 17vw;
+	}
+
+}
+
+@media screen and (max-width: 800px)
+{
+	html,body
+	{
+	display: block;
+	margin:0;
+	}
+	.home
+	{
+		height: 5vh;
+		line-height: 5vh;
+	}
+	section
+	{
+		width: 100vw;
+	}
+	.formulaire
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	table h2
+	{
+		text-align: center;
+	}
+	.produit
+	{
+		display:flex;
+		flex-direction: column;
+	}
+	button
+	{
+		font-size: 2.5vw;
+		width: 20vw;
+	}
+
 }
