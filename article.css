@@ -24,20 +24,13 @@ html
 	height: 100vh;
 }
 
-section
+.general
 {
-	max-width: 60vw;
-	width: 60vw;
+	width: 70vw;
 	background-color: white;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding-left: 5vh;
-}
-
-section section
-{
-	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 img
@@ -56,6 +49,7 @@ a:first-child
 	font-size: 1vw;
 	text-align: center;
 	line-height: 5vh;
+	font-size: 2vh;
 }
 
 .texte
@@ -70,6 +64,11 @@ a:first-child
 	text-decoration: underline;
 }
 
+section
+{
+	padding-left: 5vh;
+}
+
 button
 {
 	width: 10vw;
@@ -82,15 +81,48 @@ button
 	border-bottom: 2px solid black;
 }
 
-button:active
+.comment
 {
-	padding-bottom:-2px;
-	border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-
 textarea
 {
 	height: 10vh;
 	width:17vw;
+	max-width: 30vw;
 	margin: 1vw 0 1vw 0;
+}
+
+@media screen and (max-width: 1100px)
+{
+	html,body
+	{
+		margin: 0;
+		display: block;
+	}
+	.general
+	{
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		padding:0;
+	}
+	.texte
+	{
+		border: none;
+	}
+	button
+	{
+		width: 30vw;
+	}
+	label
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }

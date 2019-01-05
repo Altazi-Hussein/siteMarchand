@@ -46,6 +46,10 @@ h1
 	padding:1vh;
 }
 
+table:first-child input
+{
+	float:right;
+}
 
 .produit
 {

@@ -1,17 +1,17 @@
 <!doctype html>
-
 <html lang="fr">
 	<head>
  		<meta charset="utf-8">
   		<title>Ikeo - Valider et payer</title>
   		<link rel="stylesheet" href="validation.css">
-  		<script src="script.js"></script>
+      <link rel="stylesheet" href="https://www.fonts.googleapis.com/css?family=Roboto">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	</head>
 
 <body>
 	<section>
 
-		<a href="indexr.html" class="home">ACCUEIL</a>
+		<a href="index.html" class="home">ACCUEIL</a>
 		
 		<h1> Récapitulatif de votre commande</h1>
 
@@ -28,27 +28,28 @@
 
 		<section class="coord">
 		<div class="formulaire">
-			<table>
+    <table>
+    <tr>
 				<td><h2>Vos coordonnées</h2></td>
-  				<tr>
-  					<td><label for="nom">Nom:</label></td>
-      				<td><input id="nom"></td>
-      			</tr>
-  				<tr>
-  					<td><label for="prenom">Prénom:</label></td>
-      				<td><input id="prenom"></td>
-      			</tr>
-      			<tr>
-  					<td><label for="mail">Mail:</label></td>
-      				<td><input id="mail"></td>
-      			</tr>
-      			<tr>
-  					<td><label for="adresse">Adresse:</label></td>
-      				<td><input id="adresse"></td>
-      			</tr>
-      			<tr>
-  					<td><label for="adresse">Région:</label></td>
-      				<td>
+    </tr>
+        <tr>
+  					<td><label for="nom">Nom:</label>
+      			<input id="nom"></td>
+        </tr>
+  			<tr>
+            <td><label for="prenom">Prénom:</label>
+      			<input id="prenom"></td>
+        </tr>
+        <tr>
+  					<td><label for="mail">Mail:</label>
+      			<input id="mail"></td>
+        </tr>
+        <tr>
+  					<td><label for="adresse">Adresse:</label>
+      			<input id="adresse"></td>
+        </tr>
+        <tr>
+  					<td><label for="adresse">Région:</label>
       					<select>
       						<option>Auvergne-Rhône-Alpes</option>
       						<option>Bourgogne-Franche-Comté</option>
@@ -56,55 +57,63 @@
       						<option>Normandie</option>
       						<option>Nouvelle-Aquitaine</option>
       						<option>Pays de la Loire</option>
-      					</select>
-      				</td>
-      			</tr>
-      			<tr>
-  					<td><label for="telephone">Téléphone:</label></td>
-      				<td><input id="telephone" placeholder="Ex.: 0654321078"></td>
-      			</tr>
-			</table>
+      					</select></td>
+      	</tr>
+        <tr>
+  					<td><label for="telephone">Téléphone:</label>
+      			<input id="telephone" placeholder="Ex.: 0654321078"></td>
+        </tr>
+      </table>
 
-
-			<table>
-				<td><h2>Mode de livraison</h2></td>
-				<tr>
-  					<td><label for="standard">Livraison standard (3 jours) 5,99€</label></td>
-  					<td><input type="radio" id="standard" name="livraison"></td>
-      			</tr>				
-      			<tr>
-  					<td><label for="relais">Livraison point-relais (5-7 jours)</label></td>
-					<td><input type="radio" id="relais" name="livraison"></td>
-
-      			</tr>
-      			<tr>
-					
-  					<td><label for="rapide">Livraison rapide (1 jour ouvré)</label></td>
-  					<td><input type="radio" id="rapide" name="livraison"></td>
-      			</tr>
-			</table>
-
-			<table>
-				<td><h2>Paiement<h2></td>
+        <table>
+        <tr><td><h2>Mode de livraison</h2></td></tr>
+        <tr>
+  					<td>
+              <input type="radio" id="standard" name="livraison">
+              <label for="standard">Livraison standard (3 jours) 5,99€</label>
+  					</td>
+          </tr>
+        <tr>
+  					<td>
+              <input type="radio" id="relais" name="livraison">
+              <label for="relais">Livraison point-relais (5-7 jours)</label>
+					</td>
+        </tr>
+        <tr>
+  					<td>
+              <input type="radio" id="rapide" name="livraison">
+              <label for="rapide">Livraison rapide (1 jour ouvré)</label>
+  					</td>
+        </tr>
+</table>
+<table>
+			<tr><td><h2>Paiement</h2></td></tr>
 			<tr>
-				<td><label for="paypal">PayPal</label></td>
-				<td><input type="radio" id="paypal" name="paiement"></td>
-      		</tr>				
-      		<tr>
-  				<td><label for="visa">VISA</label></td>
-  				<td><input type="radio" id="visa" name="paiement"></td>
-      		</tr>
-      		<tr>
-      			<td><label for="master">MasterCard</label></td>
-				<td><input type="radio" id="master" name="paiement"></td>
-      		</tr>
-      		<tr>
-      			<td><label for="client">Carte Client</label></td>
-				<td><input type="radio" id="client" name="paiement"></td>
-      		</tr>
-			</table>
+				<td>
+          <input type="radio" id="paypal" name="paiement">
+          <label for="paypal">PayPal</label>
+				</td>
+      </tr>				
+      <tr>
+  			<td>
+          <input type="radio" id="visa" name="paiement">
+          <label for="visa">VISA</label>
+  			</td>
+      </tr>
+      	<tr>
+      		<td>
+            <input type="radio" id="master" name="paiement">
+            <label for="master">MasterCard</label>
+				  </td>
+      	</tr>
+      	<tr>
+      			<td>
+              <input type="radio" id="client" name="paiement">
+              <label for="client">Carte Client</label>
+				  </td>
+      	</tr>
+      </table>
 		</div>
-
 			<div class="button">
 			<button type="submit">Paiement</button>
 			</div>
